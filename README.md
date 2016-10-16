@@ -53,7 +53,11 @@ $ bin/hubot start
 @your_hubot post your-message-here
 ```
 
+![screenshot1](screenshots/screenshot1.png)
+
 Then you can see your posts at : http://local.myblog.com/posts
+
+![screenshot2](screenshots/screenshot2.png)
 
 You can delete your post by following command:
 
@@ -61,6 +65,10 @@ You can delete your post by following command:
 @your_hubot select
 @your_hubot delete post-id
 ```
+
+![screenshot3](screenshots/screenshot3.png)
+
+![screenshot4](screenshots/screenshot4.png)
 
 License
 ----
