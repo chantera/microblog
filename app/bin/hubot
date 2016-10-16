@@ -1,0 +1,48 @@
+#!/bin/sh
+
+ARG1=$1
+if [ "${ARG1}" == "" ]; then
+    echo "Usage: bin/hubot (start|stop|restart|status)"
+    exit 1;
+fi
+
+export HUBOT_SLACK_TOKEN=$HUBOT_SLACK_TOKEN
+if [ "${HUBOT_SLACK_TOKEN}" == "" ]; then
+    echo "env HUBOT_SLACK_TOKEN is not found"
+    exit 1;
+fi
+
+set -e
+
+npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+# exec node_modules/.bin/hubot --name "mybot" "$@"
+
+start() {
+    forever start -c coffee node_modules/.bin/hubot -a slack
+}
+stop () {
+    forever stop -c coffee node_modules/.bin/hubot
+}
+status() {
+    forever list
+}
+restart() {
+    forever restartall
+}
+
+case "$ARG1" in
+    "stop" )
+        stop
+        ;;
+    "restart" )
+        restart
+        ;;
+    "start" )
+        start
+        ;;
+    "status" )
+        status
+        ;;
+esac

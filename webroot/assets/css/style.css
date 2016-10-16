@@ -1,0 +1,61 @@
+body {
+  color: #555459;
+  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0;
+}
+#header {
+  width: 920px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+#header h1 {
+  font-size: 32px;
+  color: #2c2d30;
+  margin: 0.5em 0;
+}
+#main {
+  width: 920px;
+  margin: 0 auto;
+  padding: 60px;
+}
+mark {
+  background: none;
+  color: #a33446;
+  font-size: 14px;
+}
+.message {
+  font-family: "Lato",appleLogo,sans-serif;
+  color: #2c2d30;
+  list-style-type: none;
+}
+.message li {
+  margin: 10px auto;
+}
+.message li:hover {
+  background: #f9f9f9;
+}
+.message .user {
+  font-weight: bold;
+}
+.message .date {
+  color: #9e9ea6;
+  font-size: .75rem;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+.message .body a {
+  color: #08c;
+  text-decoration: none;
+}
+.message .body a:visited {
+  color: #2a80b9;
+}
+.copyright {
+  text-align: center;
+  margin: 1em 0 0.5em;
+}

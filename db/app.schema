@@ -1,0 +1,8 @@
+CREATE TABLE "message" (
+    `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `body`  TEXT NOT NULL,
+    `user`  TEXT NOT NULL,
+    `post_date`     TEXT NOT NULL,
+    `status`        INTEGER NOT NULL DEFAULT 1,
+    `ctime` TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
