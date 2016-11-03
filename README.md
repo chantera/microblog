@@ -7,7 +7,7 @@ Minimal micro blogging app via Slack.
 ### 1. Slack hubot application
 
 ```sh
-$ git https://github.com/chantera/microblog
+$ git clone https://github.com/chantera/microblog
 $ cd microblog/db
 $ sqlite3 app.db < app.schema
 $ cd ../app
